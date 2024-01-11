@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    {"source": "/api/:match*", "destination": "${SESS_BACKEND_API_URL}/api/:match*"},
+    {"source": "/", "destination": "${SESS_FRONTEND_URL}/"},
+    {"source": "/:match*", "destination": "${SESS_FRONTEND_URL}/:match*"}
+  ]
+}
